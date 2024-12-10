@@ -65,3 +65,20 @@ const Nav = document.querySelector(".mobile_nav");
 hamburger.addEventListener("click", () => {
   Nav.classList.toggle("mobile_nav_hide");
 });
+
+const AddToCart = document.querySelectorAll(".add_to_cart");
+
+AddToCart.forEach((button) => {
+  button.addEventListener("click", () => {
+    const id = button.getAttribute("data-id");
+    const title = button.getAttribute("data-title");
+    const image = button.getAttribute("data-image");
+    const price = button.getAttribute("data-price");
+
+    const cartItem = { id, title, image, price };
+    const cart = JSON.parse(localStorage.getItem("cart")) || []; // we get values from localStorage as object so we use json.parse
+
+    cart.push(cartItem);
+    localStorage.setItem("cart", JSON.stringify(cart)); //LocalStorage must store values as string
+  });
+});

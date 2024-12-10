@@ -3,18 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- scroll reveal -->
+
+    <!-- Render all elements normally  -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font Awesome library  -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
     <!-- swiper js  -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <!-- CSS file  -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Shadows+Into+Light&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Gloria+Hallelujah&family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
 
@@ -34,7 +41,7 @@
 
     <nav class="nav">
       <div class="container nav_container">
-        <a href="#" class="nav_logo">EXCLUSIVE</a>
+        <a href="/" class="nav_logo">EXCLUSIVE</a>
         <ul class="nav_list">
           <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
           <li class="nav_item"><a href="#" class="nav_link">About</a></li>
@@ -57,7 +64,7 @@
             <img src="./image/cart.png" alt="cartIcon" class="nav_cart" />
           </a>
         </div>
-        <!-- <span class="hamburger">
+        <span class="hamburger">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -72,10 +79,10 @@
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
-        </span> -->
+        </span>
       </div>
     </nav>
-    <!-- <nav class="mobile_nav moblie_nav_hide">
+    <nav class="mobile_nav mobile_nav_hide">
       <ul class="mobile_nav_list">
         <li class="mobile_nav_item">
           <a href="/" class="mobile_nav_link">Home</a>
@@ -93,7 +100,7 @@
           <a href="/cart.html" class="mobile_nav_link">Cart</a>
         </li>
       </ul>
-    </nav> -->
+    </nav>
     <header class="header">
       <div class="container header_container">
         <div class="header_filter">
@@ -2975,6 +2982,85 @@
         </div>
       </div>
     </section>
+
+    <!-- Service Section  -->
+    <section class="section">
+      <div class="container service_container">
+        <div class="service">
+          <img
+            src="./image/icons/service-1.png"
+            alt="service1"
+            class="service_img"
+          />
+          <h3 class="service_title">FAST AND FREE DELIVERY</h3>
+          <p class="service_p">Free delivery for all orders over $140</p>
+        </div>
+        <div class="service">
+          <img
+            src="./image/icons/service-2.png"
+            alt="service2"
+            class="service_img"
+          />
+          <h3 class="service_title">24/7 CUSTOMER SERVICE</h3>
+          <p class="service_p">Friendly 24/7 customer support</p>
+        </div>
+        <div class="service">
+          <img
+            src="./image/icons/service-3.png"
+            alt="service3"
+            class="service_img"
+          />
+          <h3 class="service_title">MONEY BACK GUARANTEE</h3>
+          <p class="service_p">We return money within 30 days</p>
+        </div>
+      </div>
+    </section>
+    <!-- footer  -->
+    <footer class="footer">
+      <div class="container footer_container">
+        <div class="footer_item">
+          <a href="#" class="footer_logo">Exclusive</a>
+          <div class="footer_p">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Exercitationem fuga harum voluptate?
+          </div>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_title">Support</h3>
+          <ul class="footer_list">
+            <li class="footer_list_item">Tanta, Egypt</li>
+            <li class="footer_list_item">email@gmail.com</li>
+            <li class="footer_list_item">+20 123 456 78</li>
+            <li class="footer_list_item">+20 11 72 345 67</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_title">Account</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">My Account</li>
+            <li class="li footer_list_item">Login / Register</li>
+            <li class="li footer_list_item">Cart</li>
+            <li class="li footer_list_item">Shop</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_title">Quick Link</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Privacy policy</li>
+            <li class="li footer_list_item">Terms of use</li>
+            <li class="li footer_list_item">FAQ's</li>
+            <li class="li footer_list_item">Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container footer_bottom_container">
+          <p class="footer_copy">
+            Made With Love By <span>Marwan Elaiashy</span>
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
