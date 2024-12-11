@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <!-- font Awesome library  -->
     <link rel="stylesheet" href="./css/all.min.css" />
+
     <!-- Scroll reveal  -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -99,18 +100,49 @@
       </ul>
     </nav>
 
-    <!-- Cart Content  -->
+    <!-- Login content  -->
     <section class="section">
-      <div class="container">
-        <div class="cart">
-          <div class="cart_header">
-            <p class="cart_header_id">Product ID</p>
-            <p class="cart_header_title">Product Title</p>
-            <p class="cart_header_image">Product Image</p>
-            <p class="cart_header_price">Price</p>
-            <p class="cart_header_delete">Delete</p>
-          </div>
-          <div class="cart-items"></div>
+      <div class="auth_container">
+        <div class="auth_img">
+          <img
+            src="./image/auth-image.png"
+            alt="authImage"
+            class="auth_image"
+          />
+        </div>
+        <div class="auth_content">
+          <form action="#" class="auth_form">
+            <h2 class="form_title">Login to your account</h2>
+            <p class="auth_p">Enter Your detalis below</p>
+            <div class="form_group">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="form_input"
+              />
+            </div>
+            <div class="form_group form_pass">
+              <input
+                type="password"
+                placeholder="Enter Your Password"
+                class="form_input"
+              />
+            </div>
+            <div class="form_group">
+              <button class="form_btn">
+                <a href="#" class="form_link">Login</a>
+              </button>
+            </div>
+            <div class="form_group">
+              <span
+                >Don't have an account?<a
+                  href="/sign-up.html"
+                  class="form_auth_link"
+                  >Register</a
+                ></span
+              >
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -161,6 +193,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/cart.js"></script>
+
+    <script src="./js/login.js"></script>
   </body>
 </html>

@@ -99,18 +99,58 @@
       </ul>
     </nav>
 
-    <!-- Cart Content  -->
+    <!-- Signup content  -->
     <section class="section">
-      <div class="container">
-        <div class="cart">
-          <div class="cart_header">
-            <p class="cart_header_id">Product ID</p>
-            <p class="cart_header_title">Product Title</p>
-            <p class="cart_header_image">Product Image</p>
-            <p class="cart_header_price">Price</p>
-            <p class="cart_header_delete">Delete</p>
-          </div>
-          <div class="cart-items"></div>
+      <div class="auth_container">
+        <div class="auth_img">
+          <img
+            src="./image/auth-image.png"
+            alt="authImage"
+            class="auth_image"
+          />
+        </div>
+        <div class="auth_content">
+          <form action="#" class="auth_form">
+            <h2 class="form_title">Create your account</h2>
+            <p class="auth_p">Enter Your detalis below</p>
+            <div class="form_group">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="form_input"
+              />
+            </div>
+            <div class="form_group">
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                class="form_input"
+              />
+            </div>
+
+            <div class="form_group form_pass">
+              <input
+                type="password"
+                placeholder="Enter your Password"
+                class="form_input"
+              />
+            </div>
+
+            <div class="form_group">
+              <button class="form_btn">
+                <a href="#" class="form_link">Create Account</a>
+              </button>
+            </div>
+            <div class="form_group">
+              <span
+                >Already have an account?<a
+                  href="/login.html"
+                  class="form_auth_link"
+                  >Login</a
+                ></span
+              >
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -161,6 +201,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/cart.js"></script>
+
+    <script src="./js/signup.js"></script>
   </body>
 </html>
